@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Discount Calculation</title>
+	<meta charset="utf-8" />
+    <script>
+        function calculate() {
+            var textAmount;
+            var amount;
+
+            textAmount = document.getElementById("amount");
+            amount = parseFloat(textAmount.value);
+
+            if (amount > 10000)
+                discount = amount * 0.20;
+            else
+                discount = amount * 0.10;
+
+            alert(discount);
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Discount Calculation</h1>
+    Amount : <input type="text" id="amount" />
+    <p/>
+    <button onclick="calculate()">Calculate</button>
+
+</body>
+</html>
