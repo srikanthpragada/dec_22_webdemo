@@ -18,6 +18,7 @@
         // get items from session 
         if (Session["cart"] != null)
         {
+            // convert Object to List<Item> 
             items = Session["cart"] as List<Item>;
         }
         else
@@ -37,7 +38,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Books</title>
 </head>
 <body>
     <form id="form1" runat="server">
