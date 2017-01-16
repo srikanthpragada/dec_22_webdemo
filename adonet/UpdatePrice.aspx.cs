@@ -18,8 +18,7 @@ public partial class adonet_UpdatePrice : System.Web.UI.Page
 
     protected void btnChange_Click(object sender, EventArgs e)
     {
-        SqlConnection con = new SqlConnection
-           (@"Data Source=(localdb)\v11.0;Initial Catalog=msdb;Integrated Security=True");
+        SqlConnection con = new SqlConnection(Database.ConnectionString);
 
         try
         {
