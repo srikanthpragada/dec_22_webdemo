@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Srikanth Technologies</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="banner">Srikanth Technologies</div>
+        <div class="menu">
+            <a href="courses.aspx">Courses</a>
+            <a href="projects.aspx">Projects</a>
+            <a href="blog.aspx">Blog</a>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>
